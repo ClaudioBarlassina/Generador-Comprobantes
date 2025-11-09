@@ -1,0 +1,65 @@
+#root {
+  /* padding: 30px;
+ position: relative; */
+  margin: 0;
+  padding: 0;
+}
+.general {
+  max-width: 600px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.conteiner-formulario {
+  border: 1px solid green;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  gap: 15px;
+}
+.conteiner-cliente{
+  border: 1px solid green;
+  padding: 7px;
+  border-radius: 5px;
+
+  
+}
+.conteiner-productos{
+   border: 1px solid green;
+  padding: 7px;
+  border-radius: 5px;
+}
+.conteiner-cliente label,
+.conteiner-productos label {
+  display: flex;
+  flex-direction: column;
+}
+.conteiner-menu {
+  width: 100%;
+  border: 1px solid green;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+.conteiner-menu label select {
+  margin: 10px;
+}
+.conteiner-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 15px;
+  align-items: center;
+}
+.buttonSubmit {
+  height: 30px;
+}
+.buttonAgregar{
+  margin: 15px;
+position: relative;
+left: 220px;
+
+  
+}
