@@ -1,8 +1,6 @@
-import { use, useState } from 'react'
+import { useState } from 'react'
 import jsPDF from 'jspdf'
-import autoTable from 'jspdf-autotable'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 function App() {
@@ -10,7 +8,6 @@ function App() {
     Fecha: '',
     Nombre: '',
   })
-
   const [productos, setProductos] = useState({
     Descripcion: '',
     Cantidad: 0,
@@ -19,7 +16,7 @@ function App() {
   })
   const [Pedido, setPedido] = useState([])
   const [Orden, setOrden] = useState([])
-  const [Select, setSelect] = useState("")
+  const [Select, setSelect] = useState("Resumen de Compra")
 
   const handler1 = (e) => {
     const { name, value } = e.target
@@ -44,11 +41,7 @@ function App() {
 const valor = e.target.value;
 console.log(valor)
 setSelect(e.target.value)
-  }
-
-
-
-
+ }
   const handlerAgregar = (e) => {
     e.preventDefault()
     setPedido((prev) => [...prev, productos])
@@ -154,11 +147,6 @@ setSelect(e.target.value)
   doc.save(`${Select}_${ConjuntClien.Nombre || 'Cliente'}.pdf`)
 }
 
-
-  
-
-  
-
 const total = Pedido.reduce((acc , item) =>acc + item.Total,0)
  
   return (
@@ -175,8 +163,6 @@ const total = Pedido.reduce((acc , item) =>acc + item.Total,0)
         </label>
       </div>
 
-
-      
       <form action="" className="conteiner-formulario">
         <div className="conteiner-cliente">
           <label htmlFor="">
