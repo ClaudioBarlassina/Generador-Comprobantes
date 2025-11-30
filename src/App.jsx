@@ -228,8 +228,8 @@ function App() {
               <thead>
                 <tr>
                   <th>Descripcion</th>
-                  <th>Cantidad</th>
-                  <th>Importe</th>
+                  <th>Cant</th>
+                  <th>Imp</th>
                   <th>Total</th>
                   <th></th>
                 </tr>
@@ -260,7 +260,7 @@ function App() {
           </div>
         </div>
         <div className="conteiner-about">
-          <h3> Total $${total} </h3>
+          <h3> Total ${total} </h3>
           <button
             type="submit"
             className="buttonSubmit"
