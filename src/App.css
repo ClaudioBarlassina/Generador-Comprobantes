@@ -19,15 +19,13 @@
   border-radius: 5px;
   gap: 15px;
 }
-.conteiner-cliente{
+.conteiner-cliente {
   border: 1px solid green;
   padding: 7px;
   border-radius: 5px;
-
-  
 }
-.conteiner-productos{
-   border: 1px solid green;
+.conteiner-productos {
+  border: 1px solid green;
   padding: 7px;
   border-radius: 5px;
 }
@@ -56,10 +54,21 @@
 .buttonSubmit {
   height: 30px;
 }
-.buttonAgregar{
+.buttonAgregar {
   margin: 15px;
-position: relative;
-left: 220px;
-
-  
+  position: relative;
+  left: 220px;
+}
+.table {
+  border: 1px solid rgba(0, 0, 0, 0.384);
+  width: 100%;
+}
+.table thead tr th {
+  border: 1px solid rgba(0, 0, 0, 0.384);
+  font-weight: 300;
+  font-size: 15px;
+}
+.table tbody tr th {
+  border: 1px solid rgba(0, 0, 0, 0.363);
+  font-size: 10px;
 }
