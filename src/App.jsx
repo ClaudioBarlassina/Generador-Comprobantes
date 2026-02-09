@@ -115,7 +115,7 @@ function App() {
     doc.setFont('helvetica', 'bold')
     doc.setFontSize(14)
     doc.setTextColor(40, 40, 40)
-    doc.text('Detalle de Productos', 20, y)
+    doc.text('Detalle', 20, y)
     y += 8
 
     doc.setFont('helvetica', 'bold')
