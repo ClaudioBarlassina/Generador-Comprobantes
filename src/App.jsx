@@ -167,7 +167,7 @@ function App() {
         <label htmlFor="">
           Tipo Comprobante
           <select name="" id="" onChange={handlerSelect}>
-            <option value="Resumen de Compra">Resumen de Compra</option>
+            <option value="Trabajo Realizado">Resumen de Compra</option>
             <option value="Presupuesto">Presupuesto</option>
             <option value="Resumen de Entrega">Resumen de Entrega</option>
           </select>
