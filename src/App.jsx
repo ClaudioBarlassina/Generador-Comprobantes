@@ -17,7 +17,7 @@ function App() {
   })
   const [Pedido, setPedido] = useState([])
   const [Orden, setOrden] = useState([])
-  const [Select, setSelect] = useState('Resumen de Compra')
+  const [Select, setSelect] = useState('')
 
   const handler1 = (e) => {
     const { name, value } = e.target
@@ -167,9 +167,9 @@ function App() {
         <label htmlFor="">
           Tipo Comprobante
           <select name="" id="" onChange={handlerSelect}>
-            <option value="Trabajo Realizado">Resumen de Compra</option>
+            <option value="Resumen de Compra">Resumen de Compra</option>
             <option value="Presupuesto">Presupuesto</option>
-            <option value="Resumen de Entrega">Resumen de Entrega</option>
+            <option value="Trabajo Realizado">Trabajo Realizado</option>
           </select>
         </label>
       </div>
